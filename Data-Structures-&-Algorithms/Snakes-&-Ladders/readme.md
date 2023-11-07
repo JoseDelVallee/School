@@ -3,5 +3,3 @@
 ### Proyecto
 
 ![](img/img_snakes.png)
-
-
