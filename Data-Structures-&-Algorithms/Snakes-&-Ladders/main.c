@@ -331,3 +331,38 @@ void MostrarTablero(Lista* tablero, Move *e, Move *s){
     printf("\n\n");
     printf("\033[0m");
 }
+
+int TirarDados(){
+
+    int random_num1,random_num2;
+
+    int num_anterior1 = 0;
+    int num_anterior2 = 0;
+    int suma = 0;
+
+    while (1) {
+        if (kbhit()){
+            char ch = getch();
+            if (ch == ' ') {
+                if (num_anterior1 != 0 && num_anterior2 != 0) {
+                        printf("\r");  // Regresar al principio de la línea
+                    for (int i = 0; i < 30; i++) {
+                        printf(" ");  // Espacios en blanco para borrar la línea anterior
+                    }
+                    printf("\r");  // Regresar al principio de la línea nuevamente
+                }
+                random_num1 = rand() % 6 + 1;  // Genera un entero aleatorio entre 1 y 6
+                random_num2 = rand() % 6 + 1;  // Genera otro entero aleatorio entre 1 y 6
+                printf("%d %d", random_num1, random_num2);
+                fflush(stdout);
+                num_anterior1 = random_num1;
+                num_anterior2 = random_num2;
+                suma = random_num1 + random_num2;
+            } else {
+                break;
+            }
+        }
+    }
+    return suma;
+}
+//Funcion que mueve al jugador en el tablero--------------------------------------------------------
