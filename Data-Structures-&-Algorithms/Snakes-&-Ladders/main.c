@@ -419,3 +419,28 @@ void mover(int jugador, int pasos, Lista* tablero, Move e[], Move s[]) {
     }
 // Mostrar el tablero actualizado
     MostrarTablero(tablero, e, s);
+}
+
+void Jugar(Lista* tablero, Move *e, Move *s){
+    int i = 1; 
+    while(J1<99 && J2<99){
+        MostrarTablero(tablero, e, s);
+        if(i%2){
+            printf("\nTurno de J1\t presione espacio para lanzar el dado\n");
+            mover(1, TirarDados(), tablero, e, s);
+        }else{
+            printf("\nTurno de J2\tresione espacio para lanzar el dado\n");
+            mover(2, TirarDados(), tablero, e, s);
+        }
+        i++;
+
+        if(J1 == 98 && J2 == 98){
+            printf("\n\tEmpate :)");
+            return;
+        }
+    }
+    system("cls");
+    
+    JGanadore(J1, J2);
+
+}   
