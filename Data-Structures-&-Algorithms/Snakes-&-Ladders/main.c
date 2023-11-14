@@ -417,3 +417,5 @@ void mover(int jugador, int pasos, Lista* tablero, Move e[], Move s[]) {
             J2 = nuevaPosicion; // Actualizar la posición del jugador 2 en el tablero
         }
     }
+// Mostrar el tablero actualizado
+    MostrarTablero(tablero, e, s);
