@@ -490,7 +490,9 @@ void Inicio(){
     printf("\t\t\t\t\t##            ##  ##  ##   ##  ##     ##     ##        ##      ##  ##        ##\n");
     printf("\t\t\t\t\t #####   ######    ####     #####    ####     #####   ####      #####   ######\n");
 
+    printf("\n\n");
 
+    printf("\033[0m");
 
-
-
+    printf("\n\t\t\t\t\t\t\t\tPi%ca del Valle Jos%c", 164, 130);
+    printf("\n\t\t\t\t\t\t\t\tRam%crez Islas Jos%c Armando", 161, 130);
