@@ -444,3 +444,24 @@ void Jugar(Lista* tablero, Move *e, Move *s){
     JGanadore(J1, J2);
 
 }   
+void JGanadore(int J1, int J2){
+
+	if(J1==99){
+        printf("\n");
+        printf(J1C);
+        printf("\t\t                \n");
+		printf("\t\t Jugador 1 gana \n");
+        printf("\t\t                \n");
+        printf("\x1b[0m");
+	}
+	else{
+        printf("\n");
+        printf(J2C);
+        printf("\t\t                \n");
+		printf("\t\t Jugador 2 gana \n");
+        printf("\t\t                \n");
+        printf("\x1b[0m");
+	}	
+
+}
+
