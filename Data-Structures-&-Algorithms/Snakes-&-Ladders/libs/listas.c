@@ -8,3 +8,8 @@ NodoL* CrearNodo(element e){
     nodo->siguiente = NULL;
     return nodo;
 }
+
+void DestruirNodo(NodoL* nodo){
+    free(nodo);
+}
+
