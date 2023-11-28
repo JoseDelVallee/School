@@ -54,3 +54,23 @@ void InsertarFinal(Lista* lista, element e){
     }
 }
 
+void InsertarDespues(int n, Lista* lista, element e){
+    NodoL* nodo = CrearNodo(e);
+
+    if(lista->head == NULL){
+        lista->head = nodo;
+        lista->longitud++;
+    }else{
+        NodoL* puntero = lista->head;
+        int posicion = 0;
+
+        while(posicion < n && puntero->siguiente){
+            puntero = puntero->siguiente;
+            posicion++;
+        }
+        nodo->siguiente = puntero->siguiente;
+        puntero->siguiente = nodo;
+        lista->longitud++;
+    }
+}
+
