@@ -19,3 +19,13 @@ Lista* CrearLista(){
     lista->longitud = 0;
     return lista;
 }
+
+void DestruirLista(Lista* lista){
+    NodoL* puntero = lista->head;
+    while(puntero != NULL){
+        lista->head = puntero->siguiente;
+        DestruirNodo(puntero);
+        puntero = puntero->siguiente;
+    }
+    free(lista);
+}
