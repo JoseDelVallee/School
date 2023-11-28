@@ -29,3 +29,14 @@ void DestruirLista(Lista* lista){
     }
     free(lista);
 }
+
+//Funciones propias de las listas
+
+void InsertarInicio(Lista* lista, element e){
+    NodoL* nodo = CrearNodo(e);
+    nodo->siguiente = lista->head;
+    lista->head = nodo;
+    lista->longitud++;
+}
+
+
