@@ -13,3 +13,9 @@ void DestruirNodo(NodoL* nodo){
     free(nodo);
 }
 
+Lista* CrearLista(){
+    Lista* lista = (Lista*)malloc(sizeof(Lista));
+    lista->head = NULL;
+    lista->longitud = 0;
+    return lista;
+}
