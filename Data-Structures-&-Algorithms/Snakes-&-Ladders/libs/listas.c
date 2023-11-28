@@ -39,4 +39,18 @@ void InsertarInicio(Lista* lista, element e){
     lista->longitud++;
 }
 
+void InsertarFinal(Lista* lista, element e){
+    NodoL* nodo = CrearNodo(e);
+    
+    if(lista->head == NULL){
+        lista->head = nodo;
+        lista->longitud++;
+    }else{
+        NodoL* puntero = lista->head;
+        while(puntero->siguiente){
+            puntero = puntero->siguiente;
+        }
+        puntero->siguiente = nodo;
+    }
+}
 
