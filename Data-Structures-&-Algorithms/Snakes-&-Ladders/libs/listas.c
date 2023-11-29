@@ -74,3 +74,16 @@ void InsertarDespues(int n, Lista* lista, element e){
     }
 }
 
+void EliminarInicio(Lista* lista){
+
+    if(lista->head){
+        NodoL* eliminar = lista->head;
+        lista->head = lista->head->siguiente;
+        DestruirNodo(eliminar);
+        lista->longitud--;
+    }else{
+        printf("Underflow");
+    }
+
+
+}
