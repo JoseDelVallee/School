@@ -87,3 +87,28 @@ void EliminarInicio(Lista* lista){
 
 
 }
+
+void EliminarFinal(Lista* lista){
+
+    if(lista->head){
+
+        if(lista->head->siguiente){
+            NodoL* puntero = lista->head;
+            while(puntero->siguiente->siguiente){
+                puntero = puntero->siguiente;
+            }
+
+            NodoL* eliminar = puntero->siguiente;
+            puntero->siguiente = NULL;
+            DestruirNodo(eliminar);
+            lista->longitud--;
+        }else{
+            NodoL* eliminar = lista->head;
+            lista->head = NULL;
+            DestruirNodo(eliminar);
+            lista->longitud--;
+        }
+
+    }
+
+}
