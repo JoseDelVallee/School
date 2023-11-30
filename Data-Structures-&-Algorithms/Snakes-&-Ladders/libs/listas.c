@@ -152,3 +152,7 @@ element Obtener(int n, Lista* lista){
             return puntero->e;
     }
 }
+int Longitud(Lista* lista){
+    return lista->longitud;
+}
+
