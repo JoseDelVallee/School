@@ -112,3 +112,22 @@ void EliminarFinal(Lista* lista){
     }
 
 }
+void Eliminarn(int n, Lista* lista){
+    if(lista->head){
+
+        if(n == 0){
+            EliminarInicio(lista);
+        }else if(n < lista->longitud){
+            NodoL* puntero = lista->head;
+            int posicion = 0;
+            while(posicion < (n-1)){
+                puntero = puntero->siguiente;
+                posicion++;
+            }
+            NodoL* eliminar = puntero->siguiente;
+            puntero->siguiente = eliminar->siguiente;
+            DestruirNodo(eliminar);
+            lista->longitud--;
+        }
+    }
+}
