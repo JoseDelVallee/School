@@ -131,3 +131,24 @@ void Eliminarn(int n, Lista* lista){
         }
     }
 }
+//Funciones adicionales
+
+element Obtener(int n, Lista* lista){
+    if(lista->head == NULL){
+        printf("La lista esta vacia");
+        return ERROR;
+    }else{
+        NodoL* puntero = lista->head;
+        int posicion = 0;
+        while(posicion < n && puntero->siguiente){
+            puntero = puntero->siguiente;
+            posicion ++;
+        }
+
+        if(posicion != n){
+            printf("ERROR, %d no encontrado", n);
+            return ERROR;
+        }else
+            return puntero->e;
+    }
+}
