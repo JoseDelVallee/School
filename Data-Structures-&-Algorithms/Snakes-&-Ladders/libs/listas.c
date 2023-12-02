@@ -156,3 +156,9 @@ int Longitud(Lista* lista){
     return lista->longitud;
 }
 
+int EstaVacia(Lista* lista){
+    return lista->head == NULL;
+}
+
+
+
