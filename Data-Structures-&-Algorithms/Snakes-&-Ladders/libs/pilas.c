@@ -23,4 +23,9 @@ Pila* CrearPila(){
   pila->longitud = 0;
   return pila;
 }
-
+void DestruirPila(Pila* pila){
+    while(pila->head!=NULL){
+        Desapilar(pila);
+    }
+    free(pila);
+}
