@@ -12,3 +12,8 @@ Node* CrearNodoP(elementp e){
     nodo -> siguiente = NULL;
     return nodo;
 }
+void DestruirNodoP(Node* nodo){
+    nodo->siguiente = NULL;
+    free(nodo);
+}
+
