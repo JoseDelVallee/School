@@ -17,3 +17,10 @@ void DestruirNodoP(Node* nodo){
     free(nodo);
 }
 
+Pila* CrearPila(){
+  Pila* pila = (Pila *)malloc(sizeof(Pila));
+  pila -> head = NULL;
+  pila->longitud = 0;
+  return pila;
+}
+
