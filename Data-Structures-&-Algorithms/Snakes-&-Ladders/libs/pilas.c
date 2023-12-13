@@ -29,3 +29,12 @@ void DestruirPila(Pila* pila){
     }
     free(pila);
 }
+
+//Funciones propias de las pilas
+
+void Push(Pila* pila, elementp e){
+    Node* nodo = CrearNodoP(e);
+    nodo->siguiente = pila->head;
+    pila->head = nodo;
+    pila->longitud++;
+}
