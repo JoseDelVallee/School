@@ -45,3 +45,10 @@ void Push(Pila* pila, elementp e){
     pila->head = nodo;
     pila->longitud++;
 }
+elementp Pop(Pila* pila, Node* ref){
+    if(ref==NULL){;
+        return ERRORP;
+    }else{
+        return ref->e;
+    }
+}
