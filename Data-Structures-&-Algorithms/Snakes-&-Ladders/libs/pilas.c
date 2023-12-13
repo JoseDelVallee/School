@@ -52,3 +52,12 @@ elementp Pop(Pila* pila, Node* ref){
         return ref->e;
     }
 }
+//Funciones adicionales para pilas
+
+elementp Cima(Pila* pila, Node* ref){
+    if(ref==NULL){
+        return ERRORP;
+    }else{
+        return ref->e;
+    }
+}
