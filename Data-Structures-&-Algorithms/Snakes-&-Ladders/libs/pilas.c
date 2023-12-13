@@ -29,7 +29,14 @@ void DestruirPila(Pila* pila){
     }
     free(pila);
 }
-
+void Desapilar(Pila* pila){
+    if(pila->head!=NULL){
+        Node* eliminar = pila->head;
+        pila->head = pila->head->siguiente;
+        DestruirNodoP(eliminar);
+        pila->longitud--;
+    }
+}
 //Funciones propias de las pilas
 
 void Push(Pila* pila, elementp e){
