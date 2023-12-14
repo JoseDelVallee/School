@@ -61,3 +61,11 @@ elementp Cima(Pila* pila, Node* ref){
         return ref->e;
     }
 }
+void Desapilar(Pila* pila){
+    if(pila->head!=NULL){
+        Node* eliminar = pila->head;
+        pila->head = pila->head->siguiente;
+        DestruirNodoP(eliminar);
+        pila->longitud--;
+    }
+}
