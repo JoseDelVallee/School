@@ -76,3 +76,20 @@ elementp Pop(Pila* pila, Node* ref){
         return ref->e;
     }
 }
+void ShowP(Pila* pila){
+
+    if(pila->head == NULL){
+        return;
+    }else{
+        Node* puntero = pila->head;
+        while(puntero!=NULL){
+
+            printf("| %d |", puntero->e);
+            puntero = puntero->siguiente;
+            
+        }
+        printf("\n");
+        return;
+    }
+
+}
