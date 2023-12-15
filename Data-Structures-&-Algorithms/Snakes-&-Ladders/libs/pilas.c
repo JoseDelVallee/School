@@ -69,3 +69,10 @@ void Desapilar(Pila* pila){
         pila->longitud--;
     }
 }
+elementp Pop(Pila* pila, Node* ref){
+    if(ref==NULL){;
+        return ERRORP;
+    }else{
+        return ref->e;
+    }
+}
