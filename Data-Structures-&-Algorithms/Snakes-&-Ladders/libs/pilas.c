@@ -93,3 +93,8 @@ void ShowP(Pila* pila){
     }
 
 }
+
+int Longitudp(Pila* pila){
+    return pila->longitud;
+}
+
