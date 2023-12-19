@@ -97,4 +97,16 @@ void ShowP(Pila* pila){
 int Longitudp(Pila* pila){
     return pila->longitud;
 }
+Pila* InvertirPila(Pila* pila){
+    Node* puntero = pila->head;
+    Pila* pila_nueva = CrearPila();
+
+    while(puntero != NULL){
+
+        Push(pila_nueva, Pop(pila, puntero));
+        puntero = puntero->siguiente;
+
+    }
+    return pila_nueva;
+}
 
