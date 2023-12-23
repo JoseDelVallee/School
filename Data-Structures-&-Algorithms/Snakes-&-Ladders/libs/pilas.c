@@ -110,3 +110,12 @@ Pila* InvertirPila(Pila* pila){
     return pila_nueva;
 }
 
+/* La función suma se restringe a casos en los que elementp 
+es un tipo de dato numérico (int) */
+
+void Suma(Pila* sumando1, Pila* sumando2, Pila* result){
+    elementp num1, num2, acarreo=0, suma=0;
+
+    Node* puntero1 = sumando1->head;
+    Node* puntero2 = sumando2->head;
+
