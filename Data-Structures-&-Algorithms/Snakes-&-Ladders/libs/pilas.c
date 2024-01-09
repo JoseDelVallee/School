@@ -129,3 +129,14 @@ void Suma(Pila* sumando1, Pila* sumando2, Pila* result){
             acarreo = suma/10;
             suma %= 10;
         }
+        Push(result, suma);
+
+        if(puntero1 == NULL){
+            puntero2 = puntero2->siguiente;
+            continue;
+        }
+
+        if(puntero2 == NULL){
+            puntero1 = puntero1->siguiente;
+            continue;
+        }
