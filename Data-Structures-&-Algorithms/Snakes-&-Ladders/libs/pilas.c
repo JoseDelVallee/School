@@ -119,3 +119,13 @@ void Suma(Pila* sumando1, Pila* sumando2, Pila* result){
     Node* puntero1 = sumando1->head;
     Node* puntero2 = sumando2->head;
 
+    while (puntero1 != NULL || puntero2 != NULL){
+        num1 = Cima(sumando1, puntero1);
+        num2 = Cima(sumando2, puntero2);
+        
+        suma = num1 + num2 + acarreo;
+        acarreo = 0;
+        if(suma>=10){
+            acarreo = suma/10;
+            suma %= 10;
+        }
