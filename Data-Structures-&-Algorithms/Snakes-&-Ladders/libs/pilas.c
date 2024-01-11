@@ -144,3 +144,10 @@ void Suma(Pila* sumando1, Pila* sumando2, Pila* result){
         puntero1 = puntero1->siguiente;
 
     }    
+
+}
+
+int verificar_balance(char *formula) {
+    Pila* parentesis = CrearPila();
+    Pila* corchetes = CrearPila();
+    Pila* llaves = CrearPila();
