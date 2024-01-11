@@ -140,3 +140,7 @@ void Suma(Pila* sumando1, Pila* sumando2, Pila* result){
             puntero1 = puntero1->siguiente;
             continue;
         }
+        puntero2 = puntero2->siguiente;
+        puntero1 = puntero1->siguiente;
+
+    }    
