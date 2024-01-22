@@ -151,3 +151,13 @@ int verificar_balance(char *formula) {
     Pila* parentesis = CrearPila();
     Pila* corchetes = CrearPila();
     Pila* llaves = CrearPila();
+    
+    for (int i = 0; formula[i] !='\0'; i++){
+  	  if(formula[i] == '('){
+            Push(parentesis, '(');
+        }else if(formula[i] == '['){
+            Push(corchetes, '[');
+        }else if(formula[i] == '{'){
+            Push(llaves, '{');
+        }else if(formula[i] ==')'){
+
