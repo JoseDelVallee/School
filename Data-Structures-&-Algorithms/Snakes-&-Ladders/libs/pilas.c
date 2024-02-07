@@ -161,3 +161,7 @@ int verificar_balance(char *formula) {
             Push(llaves, '{');
         }else if(formula[i] ==')'){
 
+            if(Longitudp(parentesis) != 0 && parentesis->head->e == '(')
+                Desapilar(parentesis);
+            else
+                Push(parentesis, ')');
