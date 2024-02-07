@@ -167,3 +167,7 @@ int verificar_balance(char *formula) {
                 Push(parentesis, ')');
 
         }else if(formula[i] ==']'){
+
+            if(Longitudp(corchetes) != 0 && corchetes->head->e == '[')
+                Desapilar(corchetes);
+
