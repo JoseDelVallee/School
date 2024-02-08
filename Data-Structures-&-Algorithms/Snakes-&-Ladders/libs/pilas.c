@@ -176,4 +176,6 @@ int verificar_balance(char *formula) {
     }
     if (parentesis->head == NULL && corchetes->head == NULL && llaves->head == NULL) {
         printf("La formula esta balanceada\n");
+    } else {
+        printf("La formula no esta balanceada, faltan los siguientes parentesis:\n");
 
