@@ -174,4 +174,6 @@ int verificar_balance(char *formula) {
                 Push(llaves,'}');
         }
     }
+    if (parentesis->head == NULL && corchetes->head == NULL && llaves->head == NULL) {
+        printf("La formula esta balanceada\n");
 
