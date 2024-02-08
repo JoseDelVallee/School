@@ -170,4 +170,8 @@ int verificar_balance(char *formula) {
 
             if(Longitudp(corchetes) != 0 && corchetes->head->e == '[')
                 Desapilar(corchetes);
+            else
+                Push(llaves,'}');
+        }
+    }
 
