@@ -199,3 +199,4 @@ int verificar_balance(char *formula) {
   }
 
     DestruirPila(parentesis);
+    DestruirPila(corchetes);
