@@ -179,3 +179,8 @@ int verificar_balance(char *formula) {
     } else {
         printf("La formula no esta balanceada, faltan los siguientes parentesis:\n");
 
+    Node* auxp = parentesis->head;
+      while(auxp != NULL){
+      printf("%c", (char)Cima(parentesis, auxp) == '(' ? ')': '(');
+         auxp = auxp->siguiente;
+        }
