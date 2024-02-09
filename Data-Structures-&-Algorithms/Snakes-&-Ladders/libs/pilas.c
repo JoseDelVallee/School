@@ -191,3 +191,8 @@ int verificar_balance(char *formula) {
             auxc = auxc->siguiente;
         }
 
+        Node* auxl = llaves->head;
+        while(auxl != NULL){
+            printf("%c\n", (char)Cima(llaves, auxl) == '{' ? '}' : '{');
+            auxc = auxc->siguiente;
+        }
