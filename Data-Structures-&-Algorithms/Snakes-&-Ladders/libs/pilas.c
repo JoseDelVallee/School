@@ -184,3 +184,10 @@ int verificar_balance(char *formula) {
       printf("%c", (char)Cima(parentesis, auxp) == '(' ? ')': '(');
          auxp = auxp->siguiente;
         }
+
+        Node* auxc = corchetes->head;
+        while(auxc != NULL){
+            printf("%c\n", (char)Cima(corchetes, auxc) == '[' ? ']' : '[');
+            auxc = auxc->siguiente;
+        }
+
