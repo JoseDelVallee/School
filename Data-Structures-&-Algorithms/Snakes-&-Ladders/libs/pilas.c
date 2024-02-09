@@ -196,3 +196,6 @@ int verificar_balance(char *formula) {
             printf("%c\n", (char)Cima(llaves, auxl) == '{' ? '}' : '{');
             auxc = auxc->siguiente;
         }
+  }
+
+    DestruirPila(parentesis);
