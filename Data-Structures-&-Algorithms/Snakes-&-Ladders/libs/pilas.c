@@ -204,3 +204,5 @@ int verificar_balance(char *formula) {
 
     return 0;
 }
+int Buscar(Pila* pila, elementp buscado){
+
