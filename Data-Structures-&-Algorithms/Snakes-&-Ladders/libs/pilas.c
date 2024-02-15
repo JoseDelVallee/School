@@ -207,5 +207,8 @@ int verificar_balance(char *formula) {
 int Buscar(Pila* pila, elementp buscado){
     Node* aux = pila->head;
     while(aux){
+    if(aux->e == buscado){
+        return 1;
+
 
 
