@@ -209,6 +209,10 @@ int Buscar(Pila* pila, elementp buscado){
     while(aux){
     if(aux->e == buscado){
         return 1;
+        }
+        aux = aux->siguiente;
+    }
+
 
 
 
