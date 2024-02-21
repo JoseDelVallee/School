@@ -212,7 +212,6 @@ int Buscar(Pila* pila, elementp buscado){
         }
         aux = aux->siguiente;
     }
-
-
+     return 0;
 
 
