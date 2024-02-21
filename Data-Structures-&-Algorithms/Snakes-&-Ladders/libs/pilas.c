@@ -214,4 +214,4 @@ int Buscar(Pila* pila, elementp buscado){
     }
      return 0;
 
-
+}
