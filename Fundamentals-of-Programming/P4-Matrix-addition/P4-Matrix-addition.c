@@ -14,8 +14,9 @@ int main(){
 	for(i=0; i<2; i++){
 		for (j=0; j<2;j++)
 			r[i][j] = a [i][j] + b[i][j];
-
 	}
+	for (i=0; i<2; i++)
+		for(j=0; j<2; j++)
+		printf("\n [%i] + [%i] = [%i]\n", a[i][j], b[i][j], r[i][j]);
 	
-
 }
