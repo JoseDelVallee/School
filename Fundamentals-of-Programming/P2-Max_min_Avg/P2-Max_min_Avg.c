@@ -4,5 +4,9 @@
 
 int main()
 {
+system("color F3");
   
+int n, suma,menor,mayor,promedioo,contador;
+float promedio;
+
 }
