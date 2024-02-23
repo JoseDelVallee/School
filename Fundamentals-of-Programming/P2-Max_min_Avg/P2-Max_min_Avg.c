@@ -8,5 +8,8 @@ system("color F3");
   
 int n, suma,menor,mayor,promedioo,contador;
 float promedio;
-
+  
+printf("Ingrese un valor numerico: ");
+scanf("%d", &n);
+  
 }
