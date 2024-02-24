@@ -18,8 +18,10 @@ contador = 0;
 menor = n;
 	while( n >= 0 )	
 	{	
-		if ( n > mayor){
-				
-				mayor=n;
-  
+	if ( n > mayor){
+		mayor=n;  
+	}
+	if( n < menor ) {
+		menor = n;		
+	}
 }
