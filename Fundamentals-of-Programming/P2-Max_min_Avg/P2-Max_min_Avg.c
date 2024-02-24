@@ -16,6 +16,10 @@ suma = 0;
 mayor = 0;
 contador = 0;
 menor = n;
-
+	while( n >= 0 )	
+	{	
+		if ( n > mayor){
+				
+				mayor=n;
   
 }
