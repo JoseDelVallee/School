@@ -12,4 +12,10 @@ float promedio;
 printf("Ingrese un valor numerico: ");
 scanf("%d", &n);
   
+suma = 0;
+mayor = 0;
+contador = 0;
+menor = n;
+
+  
 }
