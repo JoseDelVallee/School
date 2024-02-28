@@ -24,7 +24,15 @@ menor = n;
 	if( n < menor ) {
 		menor = n;		
 	}
-suma = suma + n; 
-contador++;
-promedio = suma/(float)contador;
+	suma = suma + n; 
+	contador++;
+	promedio = suma/(float)contador;
+	printf("Ingrese el siguiente valor: ");
+	scanf("%d", &n);
+	
+	}
+	
+	
+	
 }
+
