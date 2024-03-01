@@ -35,8 +35,8 @@ menor = n;
 	printf("El promedio de los valores es: %.2f\n",promedio);
 	printf("El valor mayor es: %d\n", mayor);
 	printf("El valor menor es: %d\n", menor);
-	
-	
-	
+
+return 0;
+
 }
 
