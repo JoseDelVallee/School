@@ -31,6 +31,8 @@ menor = n;
 	scanf("%d", &n);
 	
 	}
+	printf("La suma es: %d\n", suma);
+	printf("El promedio de los valores es: %.2f\n",promedio);
 	
 	
 	
