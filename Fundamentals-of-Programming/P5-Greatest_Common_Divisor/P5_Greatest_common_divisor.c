@@ -8,7 +8,8 @@ int main()
    int a;
    int b;
    printf("\Teorema de euclicez.\n\n");
-
+   printf("Introduzca el valor de (a) que sea entero:\n ");
+   scanf (" %d", &a);
 
    
 }
