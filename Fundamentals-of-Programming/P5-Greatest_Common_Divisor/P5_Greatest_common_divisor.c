@@ -7,6 +7,8 @@ int main()
    system("color F3");
    int a;
    int b;
+   printf("\Teorema de euclicez.\n\n");
 
-  
+
+   
 }
