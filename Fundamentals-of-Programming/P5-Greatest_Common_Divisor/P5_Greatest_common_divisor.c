@@ -4,7 +4,9 @@
 
 int main()
 {
-	system("color F3");
+   system("color F3");
    int a;
+   int b;
+
   
 }
