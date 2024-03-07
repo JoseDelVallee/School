@@ -11,5 +11,8 @@ int main()
    printf("Introduzca el valor de (a) que sea entero:\n ");
    scanf (" %d", &a);
 
+   printf(" Introduzca el valor de (b) que sea entero:\n ");
+   scanf (" %d", &b);
+
    
 }
