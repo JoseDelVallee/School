@@ -14,5 +14,7 @@ int main()
    printf(" Introduzca el valor de (b) que sea entero:\n ");
    scanf (" %d", &b);
 
+   int Resto = a%b;
+
    
 }
