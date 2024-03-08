@@ -21,6 +21,9 @@ int main()
        }
        while(!Resto == 0)
     {
+   a = b;
+     b = Resto;
+     Resto = a%b;
    
     }
 
