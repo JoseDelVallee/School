@@ -15,6 +15,10 @@ int main()
    scanf (" %d", &b);
 
    int Resto = a%b;
+   
+    if(Resto == 0){
+       printf("El MCD es %d", b);
+       }
 
    
 }
