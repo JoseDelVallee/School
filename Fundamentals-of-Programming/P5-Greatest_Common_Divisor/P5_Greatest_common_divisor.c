@@ -19,6 +19,10 @@ int main()
     if(Resto == 0){
        printf("El MCD es %d", b);
        }
+       while(!Resto == 0)
+    {
+   
+    }
 
    
 }
