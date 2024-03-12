@@ -21,10 +21,13 @@ int main()
        }
        while(!Resto == 0)
     {
-   a = b;
+     a = b;
      b = Resto;
      Resto = a%b;
-   
+        if(a%b == 0){
+        printf("\n\n  El MCD es %d", b);
+        break;
+     }
     }
 
    
