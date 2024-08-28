@@ -1,6 +1,6 @@
 # School📚🏫 
 
-# Escuela Superior de Cómputo🏫💻
+# [Escuela Superior de Cómputo 🏫💻📚](https://www.escom.ipn.mx)
 
 This is a repository about my technological subjects
 
