@@ -8,3 +8,7 @@ double funcionEcuacion(double x) {
 void metodoBiseccion(double extremoIzquierdo, double extremoDerecho, double tolerancia, int numeroMaximoIteraciones) {
     int iteracion;
     double puntoMedio, valorEnExtremoIzquierdo, valorEnPuntoMedio;
+
+    // Paso 1
+    iteracion = 1;
+    valorEnExtremoIzquierdo = funcionEcuacion(extremoIzquierdo);
