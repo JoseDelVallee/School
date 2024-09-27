@@ -17,4 +17,11 @@ void metodoBiseccion(double extremoIzquierdo, double extremoDerecho, double tole
 
     // Paso 3
     puntoMedio = extremoIzquierdo + (extremoDerecho - extremoIzquierdo) / 2;
+    valorEnPuntoMedio = funcionEcuacion(puntoMedio);
 
+    // Paso 4
+    if (valorEnPuntoMedio == 0 || (extremoDerecho - extremoIzquierdo) / 2 < tolerancia) {
+    // SALIDA(puntoMedio)
+    printf("\nLa solucion aproximada es: %lf\n", puntoMedio);
+    return;
+  }
