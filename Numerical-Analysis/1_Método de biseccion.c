@@ -14,3 +14,7 @@ void metodoBiseccion(double extremoIzquierdo, double extremoDerecho, double tole
     valorEnExtremoIzquierdo = funcionEcuacion(extremoIzquierdo);
     // Paso 2
     while (iteracion <= numeroMaximoIteraciones) {
+
+    // Paso 3
+    puntoMedio = extremoIzquierdo + (extremoDerecho - extremoIzquierdo) / 2;
+
