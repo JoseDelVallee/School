@@ -12,3 +12,5 @@ void metodoBiseccion(double extremoIzquierdo, double extremoDerecho, double tole
     // Paso 1
     iteracion = 1;
     valorEnExtremoIzquierdo = funcionEcuacion(extremoIzquierdo);
+    // Paso 2
+    while (iteracion <= numeroMaximoIteraciones) {
