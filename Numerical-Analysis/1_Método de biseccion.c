@@ -27,3 +27,12 @@ void metodoBiseccion(double extremoIzquierdo, double extremoDerecho, double tole
   }
     // Paso 5
     iteracion++;
+
+    // Paso 6
+      if (valorEnExtremoIzquierdo * valorEnPuntoMedio > 0) {
+         extremoIzquierdo = puntoMedio;
+         valorEnExtremoIzquierdo = valorEnPuntoMedio;
+      } else {
+         extremoDerecho = puntoMedio;
+       }
+   }
