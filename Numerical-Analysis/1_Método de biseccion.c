@@ -39,3 +39,4 @@ void metodoBiseccion(double extremoIzquierdo, double extremoDerecho, double tole
     // Paso 7
     printf("\nEl metodo fracaso despues de %d iteraciones.\n", numeroMaximoIteraciones);
 }
+int main() { }
