@@ -36,3 +36,6 @@ void metodoBiseccion(double extremoIzquierdo, double extremoDerecho, double tole
          extremoDerecho = puntoMedio;
        }
    }
+    // Paso 7
+    printf("\nEl metodo fracaso despues de %d iteraciones.\n", numeroMaximoIteraciones);
+}
