@@ -25,3 +25,5 @@ void metodoBiseccion(double extremoIzquierdo, double extremoDerecho, double tole
     printf("\nLa solucion aproximada es: %lf\n", puntoMedio);
     return;
   }
+    // Paso 5
+    iteracion++;
