@@ -43,4 +43,14 @@ int main() {
 	system("color F3");
     double extremoIzquierdo, extremoDerecho, tolerancia;
     int numeroMaximoIteraciones;
+	
+    // Entrada de datos
+    printf("Ingrese el extremo izquierdo: ");
+    scanf("%lf", &extremoIzquierdo);
+    printf("\nIngrese el extremo derecho: ");
+    scanf("%lf", &extremoDerecho);
+    printf("\nIngrese la tolerancia TOL: ");
+    scanf("%lf", &tolerancia);
+    printf("\nIngrese el numero maximo de iteraciones: ");
+    scanf("%d", &numeroMaximoIteraciones);
 }
