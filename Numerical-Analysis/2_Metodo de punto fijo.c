@@ -5,3 +5,6 @@
 double h(double x) {
     return sqrt(x + 1);
 }
+void iteracionPuntoFijo(double puntoInicial, double tolerancia, int numeroMaximoIteraciones) {
+    int iteracion;
+    double puntoActual;
