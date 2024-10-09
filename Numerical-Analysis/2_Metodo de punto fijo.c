@@ -13,3 +13,10 @@ void iteracionPuntoFijo(double puntoInicial, double tolerancia, int numeroMaximo
     // Paso 2
     while (iteracion <= numeroMaximoIteraciones) {
     // Paso 3
+      puntoActual = h(puntoInicial);
+    // Paso 4
+        if (fabs(puntoActual - puntoInicial) < tolerancia) {
+            // SALIDA(puntoActual)
+            printf("\nLa solucion aproximada es: %lf\n", puntoActual);
+            return;
+        }
