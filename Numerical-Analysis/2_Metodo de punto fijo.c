@@ -20,3 +20,8 @@ void iteracionPuntoFijo(double puntoInicial, double tolerancia, int numeroMaximo
             printf("\nLa solucion aproximada es: %lf\n", puntoActual);
             return;
         }
+    // Paso 5
+        iteracion++;
+    // Paso 6
+        puntoInicial = puntoActual;
+    }
