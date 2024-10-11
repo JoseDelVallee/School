@@ -41,3 +41,8 @@ int main() {
     scanf("%lf", &tolerancia);
     printf("\nIngrese el numero maximo de iteraciones: ");
     scanf("%d", &numeroMaximoIteraciones);
+    // Llamada al método de iteración de punto fijo
+    iteracionPuntoFijo(puntoInicial, tolerancia, numeroMaximoIteraciones);
+
+    return 0;
+}
