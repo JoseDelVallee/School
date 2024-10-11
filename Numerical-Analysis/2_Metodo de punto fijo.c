@@ -25,3 +25,6 @@ void iteracionPuntoFijo(double puntoInicial, double tolerancia, int numeroMaximo
     // Paso 6
         puntoInicial = puntoActual;
     }
+    // Paso 7
+    printf("\nEl método fracaso despues de %d iteraciones.\n", numeroMaximoIteraciones);
+}
