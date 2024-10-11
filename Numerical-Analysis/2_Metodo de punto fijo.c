@@ -35,3 +35,9 @@ int main() {
     int numeroMaximoIteraciones;
 
     // Entrada de datos
+    printf("\nIngrese la aproximacion inicial: ");
+    scanf("%lf", &puntoInicial);
+    printf("\nIngrese la tolerancia TOL: ");
+    scanf("%lf", &tolerancia);
+    printf("\nIngrese el numero maximo de iteraciones: ");
+    scanf("%d", &numeroMaximoIteraciones);
