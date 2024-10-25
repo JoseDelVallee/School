@@ -21,3 +21,6 @@ def simulate_brownian_motion(num_steps, step_size, initial_position):
 # Simulación para diez trayectorias de comparación
 num_trajectories = 10
 trajectories = [simulate_brownian_motion(num_steps, step_size, initial_position) for _ in range(num_trajectories)]
+
+# Crear la figura con tres subgráficas
+fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(18, 5))
