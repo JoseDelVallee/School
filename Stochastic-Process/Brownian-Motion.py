@@ -17,3 +17,7 @@ def simulate_brownian_motion(num_steps, step_size, initial_position):
     increments = np.random.normal(0, step_size, num_steps)
     positions = np.cumsum(increments) + initial_position
     return positions, increments
+    
+# Simulación para diez trayectorias de comparación
+num_trajectories = 10
+trajectories = [simulate_brownian_motion(num_steps, step_size, initial_position) for _ in range(num_trajectories)]
