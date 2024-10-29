@@ -24,3 +24,7 @@ trajectories = [simulate_brownian_motion(num_steps, step_size, initial_position)
 
 # Crear la figura con tres subgráficas
 fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(18, 5))
+
+# Subgráfica 1: Trayectorias del movimiento browniano
+for i, (positions, _) in enumerate(trajectories):
+    ax1.plot(time, positions, label=f'Trayectoria {i+1}')
