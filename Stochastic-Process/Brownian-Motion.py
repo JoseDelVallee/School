@@ -28,3 +28,7 @@ fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(18, 5))
 # Subgráfica 1: Trayectorias del movimiento browniano
 for i, (positions, _) in enumerate(trajectories):
     ax1.plot(time, positions, label=f'Trayectoria {i+1}')
+ax1.set_title('Comparación de diez trayectorias brownianas')
+ax1.set_xlabel('Tiempo')
+ax1.set_ylabel('Posición')
+ax1.legend()
