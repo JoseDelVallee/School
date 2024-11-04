@@ -40,3 +40,6 @@ for i, (positions, _) in enumerate(trajectories):
 ax2.set_title('Varianza de las trayectorias en función del tiempo')
 ax2.set_xlabel('Tiempo')
 ax2.set_ylabel('Varianza')
+ax2.legend()
+
+# Subgráfica 3: Histograma de los incrementos con ajuste normal para todas las trayectorias
