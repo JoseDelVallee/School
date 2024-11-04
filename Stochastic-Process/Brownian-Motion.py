@@ -43,3 +43,6 @@ ax2.set_ylabel('Varianza')
 ax2.legend()
 
 # Subgráfica 3: Histograma de los incrementos con ajuste normal para todas las trayectorias
+colors = plt.cm.get_cmap('tab10', num_trajectories)  # Paleta de colores
+for i, (_, increments) in enumerate(trajectories):
+    ax3.hist(increments, bins=30, density=True, alpha=0.5, label=f'Trayectoria {i+1}', color=colors(i))
