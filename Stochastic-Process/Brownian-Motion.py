@@ -37,3 +37,6 @@ ax1.legend()
 for i, (positions, _) in enumerate(trajectories):
     var = [np.var(positions[:j]) for j in range(1, num_steps)]
     ax2.plot(time[1:], var, label=f'Varianza de Trayectoria {i+1}')
+ax2.set_title('Varianza de las trayectorias en función del tiempo')
+ax2.set_xlabel('Tiempo')
+ax2.set_ylabel('Varianza')
