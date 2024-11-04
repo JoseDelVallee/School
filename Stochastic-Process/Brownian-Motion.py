@@ -46,3 +46,6 @@ ax2.legend()
 colors = plt.cm.get_cmap('tab10', num_trajectories)  # Paleta de colores
 for i, (_, increments) in enumerate(trajectories):
     ax3.hist(increments, bins=30, density=True, alpha=0.5, label=f'Trayectoria {i+1}', color=colors(i))
+
+# Superponer la curva normal teórica (utilizando los incrementos de la primera trayectoria como referencia)
+mean_increments = np.mean(trajectories[0][1])
