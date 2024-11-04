@@ -49,3 +49,5 @@ for i, (_, increments) in enumerate(trajectories):
 
 # Superponer la curva normal teórica (utilizando los incrementos de la primera trayectoria como referencia)
 mean_increments = np.mean(trajectories[0][1])
+std_increments = np.std(trajectories[0][1])
+xmin, xmax = ax3.set_xlim()
