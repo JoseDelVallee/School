@@ -32,3 +32,8 @@ ax1.set_title('Comparación de diez trayectorias brownianas')
 ax1.set_xlabel('Tiempo')
 ax1.set_ylabel('Posición')
 ax1.legend()
+
+# Subgráfica 2: Varianza a lo largo del tiempo para cada trayectoria
+for i, (positions, _) in enumerate(trajectories):
+    var = [np.var(positions[:j]) for j in range(1, num_steps)]
+    ax2.plot(time[1:], var, label=f'Varianza de Trayectoria {i+1}')
