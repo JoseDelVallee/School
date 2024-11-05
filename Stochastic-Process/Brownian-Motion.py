@@ -51,3 +51,5 @@ for i, (_, increments) in enumerate(trajectories):
 mean_increments = np.mean(trajectories[0][1])
 std_increments = np.std(trajectories[0][1])
 xmin, xmax = ax3.set_xlim()
+x = np.linspace(xmin, xmax, 100)
+p = norm.pdf(x, mean_increments, std_increments)
