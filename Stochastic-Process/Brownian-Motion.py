@@ -58,3 +58,6 @@ ax3.set_title('Histograma de los Incrementos de 10 Trayectorias')
 ax3.set_xlabel('Incrementos')
 ax3.set_ylabel('Densidad de Probabilidad')
 ax3.legend()
+
+plt.tight_layout()
+plt.show()
