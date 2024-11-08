@@ -61,3 +61,8 @@ ax3.legend()
 
 plt.tight_layout()
 plt.show()
+
+# Cálculo y presentación de resultados
+for i, (_, increments) in enumerate(trajectories):
+    mean_increments = np.mean(increments)
+    std_increments = np.std(increments)
