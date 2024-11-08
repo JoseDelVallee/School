@@ -66,3 +66,4 @@ plt.show()
 for i, (_, increments) in enumerate(trajectories):
     mean_increments = np.mean(increments)
     std_increments = np.std(increments)
+   print(f" Trayectoria {i+1}: Media de los incrementos {mean_increments:.1f},    Varianza de los incrementos: {np.var(increments):.1f}, ")
