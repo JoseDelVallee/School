@@ -23,3 +23,10 @@ def BGD(x, y, x_test, y_test, iters, alpha, weight):
     preds = []
     errors = []
     wi_values = []
+# Proceso de BGD para el número de iteraciones
+    for iteration in range(iters):
+        for j in range(len(x)):
+            sumA += ((wi * x[j]) - y[j]) * x[j]
+        wi = wi - alpha * (2 * sumA)
+        wi = wi - weight
+        weight = wi
