@@ -35,3 +35,7 @@ def BGD(x, y, x_test, y_test, iters, alpha, weight):
         y_pred = [np.dot(xi, wi) for xi in x_test]
         preds.append(y_pred)
 
+# Calculo de del error absoluto para el conjunto de prueba
+        error = sum(abs((y_pred[k] - y_test[k])) for k in range(len(y_test)))
+        errors.append(error)
+        wi_values.append(wi)
