@@ -30,3 +30,8 @@ def BGD(x, y, x_test, y_test, iters, alpha, weight):
         wi = wi - alpha * (2 * sumA)
         wi = wi - weight
         weight = wi
+
+# Calculo de las predicciones para el conjunto de prueba
+        y_pred = [np.dot(xi, wi) for xi in x_test]
+        preds.append(y_pred)
+
