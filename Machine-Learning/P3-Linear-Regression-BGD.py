@@ -39,3 +39,10 @@ def BGD(x, y, x_test, y_test, iters, alpha, weight):
         error = sum(abs((y_pred[k] - y_test[k])) for k in range(len(y_test)))
         errors.append(error)
         wi_values.append(wi)
+
+# Imprimimos los valores de la iteracion
+        print(f"Iteración {iteration + 1}:")
+        print(f"  w = {wi}")
+        print(f"  y_test = {y_test}")
+        print(f"  y_pred = {y_pred}")
+        print(f"  Error de estimación = {error}\n")
