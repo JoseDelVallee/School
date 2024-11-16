@@ -46,3 +46,9 @@ def BGD(x, y, x_test, y_test, iters, alpha, weight):
         print(f"  y_test = {y_test}")
         print(f"  y_pred = {y_pred}")
         print(f"  Error de estimación = {error}\n")
+    return preds, errors, wi_values
+
+# Definimos los parámetros para el entrenamiento
+iters = 4            # Iteraciones para BGD
+alpha = 0.00000007
+weight = 0.0         # Peso inicial
