@@ -55,5 +55,10 @@ weight = 0.0         # Peso inicial
 
 # Funcion para BGD
 preds, errors, wi_values = BGD(x_train, y_train, x_test, y_test, iters, alpha, weight)
+
 # Graficas
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
+
+# Gráfico de regresión lineal
+for i in range(iters):
+    ax1.plot(x_test, preds[i], label=f'Iteración {i+1}')
