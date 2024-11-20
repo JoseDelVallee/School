@@ -52,3 +52,6 @@ def BGD(x, y, x_test, y_test, iters, alpha, weight):
 iters = 4            # Iteraciones para BGD
 alpha = 0.00000007
 weight = 0.0         # Peso inicial
+
+# Funcion para BGD
+preds, errors, wi_values = BGD(x_train, y_train, x_test, y_test, iters, alpha, weight)
