@@ -62,3 +62,8 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
 # Gráfico de regresión lineal
 for i in range(iters):
     ax1.plot(x_test, preds[i], label=f'Iteración {i+1}')
+ax1.scatter(x_test, y_test, color='red')
+ax1.set_title('Regresión Lineal')
+ax1.set_xlabel('Terreno (m2)')
+ax1.set_ylabel('Precio (MDP)')
+ax1.legend()
