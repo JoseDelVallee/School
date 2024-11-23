@@ -72,3 +72,8 @@ ax1.legend()
 # Gráfico de error de estimación
 ax2.scatter(np.arange(1, iters + 1), errors, color='red')
 ax2.set_title('Error de Estimación')
+ax2.set_xlabel('Iteración')
+ax2.set_ylabel('Error')
+
+plt.show()
+
