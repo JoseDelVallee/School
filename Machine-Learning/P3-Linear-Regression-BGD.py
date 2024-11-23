@@ -67,3 +67,8 @@ ax1.set_title('Regresión Lineal')
 ax1.set_xlabel('Terreno (m2)')
 ax1.set_ylabel('Precio (MDP)')
 ax1.legend()
+
+
+# Gráfico de error de estimación
+ax2.scatter(np.arange(1, iters + 1), errors, color='red')
+ax2.set_title('Error de Estimación')
