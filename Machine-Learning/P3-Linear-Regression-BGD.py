@@ -85,3 +85,7 @@ datos
 # Dividimos los datos
 x = datos.iloc[:, :-1]
 y = datos.iloc[:, -1:]
+
+
+# Dividimos los datos en conjuntos de entrenamiento(70%) y prueba(30%)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0, shuffle=True)
