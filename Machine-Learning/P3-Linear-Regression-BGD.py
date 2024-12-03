@@ -77,3 +77,7 @@ ax2.set_ylabel('Error')
 
 plt.show()
 
+
+# Programa 2 Dataset y visualización
+datos = pd.read_csv('/content/drive/MyDrive/Prácticas Machine Learning/Práctica3-Regresión-Lineal-con-BGD-Machine-Learning/Dataset_multivariable.csv')
+datos
