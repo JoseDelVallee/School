@@ -95,3 +95,11 @@ x_train = np.array(x_train)
 y_train = np.array(y_train)
 x_test = np.array(x_test)
 y_test = np.array(y_test)
+
+
+# Función para calcular el error de aproximación.
+def approximation_Error(x_test, y_test):
+    error = 0
+    for i in range(3):
+        error += abs(x_test[i] - y_test[i])
+    return error
