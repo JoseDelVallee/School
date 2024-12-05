@@ -89,3 +89,9 @@ y = datos.iloc[:, -1:]
 
 # Dividimos los datos en conjuntos de entrenamiento(70%) y prueba(30%)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0, shuffle=True)
+
+
+x_train = np.array(x_train)
+y_train = np.array(y_train)
+x_test = np.array(x_test)
+y_test = np.array(y_test)
