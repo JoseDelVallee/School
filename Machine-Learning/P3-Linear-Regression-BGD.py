@@ -124,3 +124,9 @@ iters = 4           # Número de iteraciones
 weights = []
 preds = []
 errors = []
+
+# Ejecución de las iteraciones de BGD
+for iteracion in range(iters):
+    weight = BGD(x_train, weight, alpha)
+    weights.append(weight.copy())
+
