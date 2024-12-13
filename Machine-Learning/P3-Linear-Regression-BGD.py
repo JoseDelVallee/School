@@ -115,3 +115,7 @@ def BGD(datos, w0, alpha):
 
         w0[id_x] -= 2 * alpha * suma_total
     return w0
+# Parámetros iniciales
+weight = np.zeros(5)  # Inicialización w en 0
+alpha = 0.000006      # Tasa de aprendizaje
+iters = 4           # Número de iteraciones
