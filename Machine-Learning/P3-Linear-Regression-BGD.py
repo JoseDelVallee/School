@@ -103,3 +103,15 @@ def approximation_Error(x_test, y_test):
     for i in range(3):
         error += abs(x_test[i] - y_test[i])
     return error
+
+# Función para realizar el (BGD).
+def BGD(datos, w0, alpha):
+    for id_x in range(len(w0)):
+        suma_total = 0  # Inicializamos la suma de errores
+
+        for j in range(len(datos)):
+            suma_total += ((w0[id_x] * datos[j][id_x]) - y_train[j]) * datos[j][id_x]
+
+
+        w0[id_x] -= 2 * alpha * suma_total
+    return w0
