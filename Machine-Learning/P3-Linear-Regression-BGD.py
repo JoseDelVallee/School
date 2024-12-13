@@ -119,3 +119,8 @@ def BGD(datos, w0, alpha):
 weight = np.zeros(5)  # Inicialización w en 0
 alpha = 0.000006      # Tasa de aprendizaje
 iters = 4           # Número de iteraciones
+
+# Listas para almacenar los valores
+weights = []
+preds = []
+errors = []
