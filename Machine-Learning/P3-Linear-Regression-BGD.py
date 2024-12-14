@@ -140,4 +140,5 @@ for iteracion in range(iters):
 
 # Función para imprimir los resultados
 def imprimir_resultados(arr, iters):
-
+    for i in range(iters):
+        print(f"Iteración {i + 1}: ", arr[i])
