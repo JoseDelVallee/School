@@ -130,3 +130,6 @@ for iteracion in range(iters):
     weight = BGD(x_train, weight, alpha)
     weights.append(weight.copy())
 
+    # Calculo las predicciones
+    y_pred = np.dot(x_test, weight)
+    preds.append(y_pred)
