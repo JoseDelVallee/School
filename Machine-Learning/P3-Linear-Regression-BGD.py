@@ -139,4 +139,5 @@ for iteracion in range(iters):
     errors.append(error_estimacion)
 
 # Función para imprimir los resultados
+def imprimir_resultados(arr, iters):
 
