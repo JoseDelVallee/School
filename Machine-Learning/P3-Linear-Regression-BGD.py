@@ -138,3 +138,5 @@ for iteracion in range(iters):
     error_estimacion = approximation_Error(y_pred, y_test)
     errors.append(error_estimacion)
 
+# Función para imprimir los resultados
+
