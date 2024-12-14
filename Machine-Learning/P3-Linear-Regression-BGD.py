@@ -133,3 +133,8 @@ for iteracion in range(iters):
     # Calculo las predicciones
     y_pred = np.dot(x_test, weight)
     preds.append(y_pred)
+
+    # Calculo el error de estimación
+    error_estimacion = approximation_Error(y_pred, y_test)
+    errors.append(error_estimacion)
+
