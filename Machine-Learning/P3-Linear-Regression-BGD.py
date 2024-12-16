@@ -142,3 +142,8 @@ for iteracion in range(iters):
 def imprimir_resultados(arr, iters):
     for i in range(iters):
         print(f"Iteración {i + 1}: ", arr[i])
+
+# Resultados de las iteraciones
+# Pesos (w) en cada iteración
+print("\n\n\nPesos (w) en cada iteración:")
+imprimir_resultados(weights, iters)
