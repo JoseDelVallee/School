@@ -147,3 +147,7 @@ def imprimir_resultados(arr, iters):
 # Pesos (w) en cada iteración
 print("\n\n\nPesos (w) en cada iteración:")
 imprimir_resultados(weights, iters)
+
+# Valores reales (y_test)
+print("\nValores reales (y_test):")
+print(f"{y_test}")
