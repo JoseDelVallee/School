@@ -151,3 +151,7 @@ imprimir_resultados(weights, iters)
 # Valores reales (y_test)
 print("\nValores reales (y_test):")
 print(f"{y_test}")
+
+# Predicciones en cada iteración (y_pred)
+print("\nPredicciones en cada iteración (y_pred):")
+imprimir_resultados(preds, iters)
