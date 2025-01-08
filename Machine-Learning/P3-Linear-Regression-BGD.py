@@ -155,3 +155,7 @@ print(f"{y_test}")
 # Predicciones en cada iteración (y_pred)
 print("\nPredicciones en cada iteración (y_pred):")
 imprimir_resultados(preds, iters)
+
+# Errores de estimación en cada iteración
+print("\nErrores de Estimación en cada iteración:")
+imprimir_resultados(errors, iters)
