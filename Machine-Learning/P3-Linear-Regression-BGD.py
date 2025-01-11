@@ -163,3 +163,11 @@ imprimir_resultados(errors, iters)
 # Gráfico error de estimacion
 for i in range(iters):
     plt.scatter(i, errors[i], label=f'Iteración {i + 1}')
+
+
+# Etiquetas gráfico
+plt.xlabel('Iteración')
+plt.ylabel('Error de Estimación')
+plt.title('Errores de Estimación por Iteración')
+plt.legend()
+plt.show()
