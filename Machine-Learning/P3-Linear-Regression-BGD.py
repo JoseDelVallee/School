@@ -159,3 +159,7 @@ imprimir_resultados(preds, iters)
 # Errores de estimación en cada iteración
 print("\nErrores de Estimación en cada iteración:")
 imprimir_resultados(errors, iters)
+
+# Gráfico error de estimacion
+for i in range(iters):
+    plt.scatter(i, errors[i], label=f'Iteración {i + 1}')
