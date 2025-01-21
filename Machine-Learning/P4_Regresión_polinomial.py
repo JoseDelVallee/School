@@ -27,3 +27,8 @@ linear_OLS_model.fit(x_train, y_train)
 
 # Realizamos predicciones
 y_pred_linear_OLS_model = linear_OLS_model.predict(x_test)
+
+# Calculamos las métricas
+mse_linear_regression_OLS = mean_squared_error(y_test, y_pred_linear_OLS_model)
+r2_linear_regression_OLS = r2_score(y_test, y_pred_linear_OLS_model)
+1
