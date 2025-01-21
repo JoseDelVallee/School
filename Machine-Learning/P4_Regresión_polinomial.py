@@ -13,3 +13,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 df = pd.read_csv('/content/drive/MyDrive/Prácticas Machine Learning/Práctica 4_Regresión_polinomial_Machine_Learning/datos.csv')
 df
+
+# Asignamos las columnas
+x = df['x'].values.reshape(-1, 1)  # Se cambia de x a bidimensional
+y = df['y'].values
