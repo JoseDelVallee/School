@@ -20,3 +20,7 @@ y = df['y'].values
 
 # Dividimos los datos en conjuntos de entrenamiento y prueba
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, shuffle=True, random_state=0)
+
+# Entrenamos el modelo
+linear_OLS_model = LinearRegression()
+linear_OLS_model.fit(x_train, y_train)
