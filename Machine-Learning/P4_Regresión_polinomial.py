@@ -31,4 +31,12 @@ y_pred_linear_OLS_model = linear_OLS_model.predict(x_test)
 # Calculamos las métricas
 mse_linear_regression_OLS = mean_squared_error(y_test, y_pred_linear_OLS_model)
 r2_linear_regression_OLS = r2_score(y_test, y_pred_linear_OLS_model)
-1
+
+# Visualizacion de la grafica
+plt.scatter(x_test, y_test, color='blue', label='y_test')
+plt.plot(x_test, y_pred_linear_OLS_model, color="red", label='y_pred')
+plt.xlabel('x_test')
+plt.ylabel('y_test / y_pred')
+plt.title("Regresion lineal con OLS")
+plt.legend()
+plt.show()
