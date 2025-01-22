@@ -40,3 +40,6 @@ plt.ylabel('y_test / y_pred')
 plt.title("Regresion lineal con OLS")
 plt.legend()
 plt.show()
+
+# Metricas
+print("Regresion lineal con OLS\n", mse_linear_regression_OLS,"         ", r2_linear_regression_OLS)
