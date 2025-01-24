@@ -43,3 +43,6 @@ plt.show()
 
 # Metricas
 print("Regresion lineal con OLS\n", mse_linear_regression_OLS,"         ", r2_linear_regression_OLS)
+
+# Creamos la transformación polinomial (grado 2)
+poly_features_OLS = PolynomialFeatures(degree=2)
