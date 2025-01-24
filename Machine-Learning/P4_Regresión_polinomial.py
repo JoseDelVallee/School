@@ -46,3 +46,6 @@ print("Regresion lineal con OLS\n", mse_linear_regression_OLS,"         ", r2_li
 
 # Creamos la transformación polinomial (grado 2)
 poly_features_OLS = PolynomialFeatures(degree=2)
+
+# Aplicamos la transformación polinomial sobre x_train
+x_poly_2_OLS = poly_features_OLS.fit_transform(x_train)
