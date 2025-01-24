@@ -49,3 +49,6 @@ poly_features_OLS = PolynomialFeatures(degree=2)
 
 # Aplicamos la transformación polinomial sobre x_train
 x_poly_2_OLS = poly_features_OLS.fit_transform(x_train)
+
+# Inicializamos el modelo
+model_2_OLS = LinearRegression()
