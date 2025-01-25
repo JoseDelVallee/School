@@ -52,3 +52,6 @@ x_poly_2_OLS = poly_features_OLS.fit_transform(x_train)
 
 # Inicializamos el modelo
 model_2_OLS = LinearRegression()
+
+# Ajustamos el modelo
+model_2_OLS.fit(x_poly_2_OLS, y_train)
