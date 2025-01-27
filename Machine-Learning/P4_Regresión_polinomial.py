@@ -61,3 +61,6 @@ y_pred_2_OLS = model_2_OLS.predict(poly_features_OLS.transform(x_test))
 
 # Calculamos el (MSE)
 mse_poly_2_OLS = mean_squared_error(y_test, y_pred_2_OLS)
+
+# Calculamos R^2
+r2_poly_2_OLS = r2_score(y_test, y_pred_2_OLS)
