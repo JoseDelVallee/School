@@ -58,3 +58,6 @@ model_2_OLS.fit(x_poly_2_OLS, y_train)
 
 # Predicciones sobre el conjunto de prueba usando el x_train
 y_pred_2_OLS = model_2_OLS.predict(poly_features_OLS.transform(x_test))
+
+# Calculamos el (MSE)
+mse_poly_2_OLS = mean_squared_error(y_test, y_pred_2_OLS)
