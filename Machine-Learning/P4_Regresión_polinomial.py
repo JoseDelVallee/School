@@ -77,3 +77,6 @@ plt.ylabel('y_test / y_pred')
 plt.title("Regresion polinomial grado 2 con OLS")
 plt.legend()
 plt.show()
+
+# Metricas
+print("Regresion polinomial grado 2 con OLS \n", mse_poly_2_OLS,"        ", r2_poly_2_OLS)
