@@ -68,3 +68,8 @@ r2_poly_2_OLS = r2_score(y_test, y_pred_2_OLS)
 # Creamos un DataFrame para almacenar las predicciones junto con los valores de 'x_test' para visualizarlos
 dataframe = pd.DataFrame({'x_test': x_test.flatten(), 'y_pred_2_OLS': y_pred_2_OLS})
 dataframe_sorted = dataframe.sort_values(by='x_test')
+
+# Visualizacion de la grafica
+plt.scatter(x_test, y_test, color='blue', label='y_test')
+plt.plot(dataframe_sorted['x_test'], dataframe_sorted['y_pred_2_OLS'], color = "red")
+plt.xlabel('x_test')
