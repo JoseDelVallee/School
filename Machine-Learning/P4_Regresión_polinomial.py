@@ -80,3 +80,6 @@ plt.show()
 
 # Metricas
 print("Regresion polinomial grado 2 con OLS \n", mse_poly_2_OLS,"        ", r2_poly_2_OLS)
+
+# Creamos la transformación polinomial (grado 3)
+poly_features_OLS_3 = PolynomialFeatures(degree=3)
