@@ -83,3 +83,6 @@ print("Regresion polinomial grado 2 con OLS \n", mse_poly_2_OLS,"        ", r2_p
 
 # Creamos la transformación polinomial (grado 3)
 poly_features_OLS_3 = PolynomialFeatures(degree=3)
+
+# Aplicamos la transformación polinomial sobre x_train
+x_poly_3_OLS = poly_features_OLS_3.fit_transform(x_train)
