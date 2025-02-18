@@ -104,3 +104,8 @@ r2_poly_3_OLS = r2_score(y_test, y_pred_3_OLS)
 
 dataframe['y_pred_3_OLS'] = y_pred_3_OLS
 dataframe_sorted = dataframe.sort_values(by='x_test')
+
+# Visualización de la gráfica:
+plt.scatter(x_test, y_test, color='blue', label='y_test')
+plt.plot(dataframe_sorted['x_test'], dataframe_sorted['y_pred_3_OLS'], color="red", label='y_pred_3_OLS')
+plt.xlabel('x_test')
