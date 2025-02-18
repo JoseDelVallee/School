@@ -115,3 +115,6 @@ plt.legend()
 
 # Mostramos el gráfico
 plt.show()
+
+# Imprimimos las métricas de evaluación
+print("Regresión polinomial grado 3 con OLS\n", mse_poly_3_OLS, "         ", r2_poly_3_OLS)
