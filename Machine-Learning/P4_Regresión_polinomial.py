@@ -121,3 +121,6 @@ print("Regresión polinomial grado 3 con OLS\n", mse_poly_3_OLS, "         ", r2
 
 # Definimos el modelo con descenso de gradiente estocástico (SGD)
 linear_SGD_model = SGDRegressor(learning_rate='constant', max_iter=10000, eta0=0.0000001)
+
+# Ajustamos el modelo con (x_train, y_train)
+linear_SGD_model.fit(x_train, y_train.ravel())
