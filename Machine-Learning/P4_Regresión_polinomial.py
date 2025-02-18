@@ -124,3 +124,6 @@ linear_SGD_model = SGDRegressor(learning_rate='constant', max_iter=10000, eta0=0
 
 # Ajustamos el modelo con (x_train, y_train)
 linear_SGD_model.fit(x_train, y_train.ravel())
+
+# Predicciones con el modelo entrenado sobre (x_test).
+y_pred_linear_SGD_model = linear_SGD_model.predict(x_test)
