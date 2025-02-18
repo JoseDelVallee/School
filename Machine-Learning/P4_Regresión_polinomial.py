@@ -101,3 +101,6 @@ mse_poly_3_OLS = mean_squared_error(y_test, y_pred_3_OLS)
 
 # Calculamos (R^2)
 r2_poly_3_OLS = r2_score(y_test, y_pred_3_OLS)
+
+dataframe['y_pred_3_OLS'] = y_pred_3_OLS
+dataframe_sorted = dataframe.sort_values(by='x_test')
