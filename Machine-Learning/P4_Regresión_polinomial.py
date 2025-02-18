@@ -112,3 +112,6 @@ plt.xlabel('x_test')
 plt.ylabel('y_test / y_pred')
 plt.title("Regresión polinomial grado 3 con OLS")
 plt.legend()
+
+# Mostramos el gráfico
+plt.show()
