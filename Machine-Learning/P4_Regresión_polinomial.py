@@ -95,3 +95,6 @@ model_3_OLS.fit(x_poly_3_OLS, y_train)
 
 # Realizamos predicciones usando el modelo ajustado
 y_pred_3_OLS = model_3_OLS.predict(poly_features_OLS_3.transform(x_test))
+
+# Calculamos el (MSE)
+mse_poly_3_OLS = mean_squared_error(y_test, y_pred_3_OLS)
