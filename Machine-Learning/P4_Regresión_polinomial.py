@@ -133,3 +133,8 @@ mse_linear_regression_SGD = mean_squared_error(y_test, y_pred_linear_SGD_model)
 
 # Calculamos el coeficiente de determinación (R^2)
 r2_linear_regression_SGD = r2_score(y_test, y_pred_linear_SGD_model)
+
+# Graficamos los resultados
+plt.scatter(x_test, y_test, color='blue', label='y_test')
+plt.plot(x_test, y_pred_linear_SGD_model, color="red")
+plt.xlabel('x_test')
