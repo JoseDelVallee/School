@@ -127,3 +127,6 @@ linear_SGD_model.fit(x_train, y_train.ravel())
 
 # Predicciones con el modelo entrenado sobre (x_test).
 y_pred_linear_SGD_model = linear_SGD_model.predict(x_test)
+
+# Calculamos el Error Cuadrático Medio (MSE)
+mse_linear_regression_SGD = mean_squared_error(y_test, y_pred_linear_SGD_model)
