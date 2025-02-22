@@ -142,3 +142,6 @@ plt.ylabel('y_test / y_pred')
 plt.title("Regresion lineal con SGD")
 plt.legend()
 plt.show()
+
+# Imprimimos las métricas
+print("Regresión lineal con SGD\n ", mse_linear_regression_SGD, "         ", r2_linear_regression_SGD)
