@@ -145,3 +145,10 @@ plt.show()
 
 # Imprimimos las métricas
 print("Regresión lineal con SGD\n ", mse_linear_regression_SGD, "         ", r2_linear_regression_SGD)
+
+# Función para el calculo de MSE y R2
+def total(x_test, y_test, regresion):
+    prediction = regresion.predict(x_test)
+    mse = mean_squared_error(y_test, prediction)
+    r2 = r2_score(y_test, prediction)
+    return mse, r2
