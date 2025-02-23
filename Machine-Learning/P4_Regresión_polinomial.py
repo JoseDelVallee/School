@@ -152,3 +152,13 @@ def total(x_test, y_test, regresion):
     mse = mean_squared_error(y_test, prediction)
     r2 = r2_score(y_test, prediction)
     return mse, r2
+
+# Función para graficar los resultados
+def Grafica_Regresion(x_test, y_test, y_pred, title):
+    plt.scatter(x_test, y_test, color='blue', label='Datos de prueba')
+    plt.plot(x_test, y_pred, color='red', label='Predicción')
+    plt.xlabel('x_test')
+    plt.ylabel('y_test / y_pred')
+    plt.title(title)
+    plt.legend()
+    plt.show()
