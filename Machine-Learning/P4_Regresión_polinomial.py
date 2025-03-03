@@ -182,3 +182,6 @@ def RegresionSGD_grado_3(x_train, y_train, x_test, y_test):
 x = data['x'].values
 y = data['y'].values
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0, shuffle=True)
+
+# Llamar a la función de regresión con SGD para grado 3 y almacenar los resultados
+mse_poly_3_SGD, r2_poly_3_SGD = RegresionSGD_grado_3(x_train, y_train, x_test, y_test)
