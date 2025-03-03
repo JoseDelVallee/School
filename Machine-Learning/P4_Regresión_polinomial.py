@@ -167,3 +167,6 @@ def Grafica_Regresion(x_test, y_test, y_pred, title):
 def RegresionSGD_grado_3(x_train, y_train, x_test, y_test):
     model_SGD_poly_3 = make_pipeline(PolynomialFeatures(degree=3), SGDRegressor(learning_rate='constant', max_iter=10000, eta0=0.0000001))
     model_SGD_poly_3.fit(x_train.reshape(-1, 1), y_train)
+
+    # Evaluar el modelo
+    mse_poly_3, r2_poly_3 = total(x_test.reshape(-1, 1), y_test, model_SGD_poly_3)
