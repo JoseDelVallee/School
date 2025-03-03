@@ -176,3 +176,9 @@ def RegresionSGD_grado_3(x_train, y_train, x_test, y_test):
     y_pred_poly_3 = model_SGD_poly_3.predict(x_test[indices].reshape(-1, 1))
     Grafica_Regresion(x_test[indices], y_test[indices], y_pred_poly_3, 'Regresión polinomial con SGD de grado 3')
     return mse_poly_3, r2_poly_3
+
+
+# Dividir los datos en conjunto de entrenamiento y prueba
+x = data['x'].values
+y = data['y'].values
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=0, shuffle=True)
