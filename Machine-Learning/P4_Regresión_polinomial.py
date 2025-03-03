@@ -170,3 +170,9 @@ def RegresionSGD_grado_3(x_train, y_train, x_test, y_test):
 
     # Evaluar el modelo
     mse_poly_3, r2_poly_3 = total(x_test.reshape(-1, 1), y_test, model_SGD_poly_3)
+
+    # Predicción y graficar los resultados
+    indices = np.argsort(x_test)  # Ordenar x_test para que la gráfica sea continua
+    y_pred_poly_3 = model_SGD_poly_3.predict(x_test[indices].reshape(-1, 1))
+    Grafica_Regresion(x_test[indices], y_test[indices], y_pred_poly_3, 'Regresión polinomial con SGD de grado 3')
+    return mse_poly_3, r2_poly_3
