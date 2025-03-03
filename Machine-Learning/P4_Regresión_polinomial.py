@@ -185,3 +185,6 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_
 
 # Llamar a la función de regresión con SGD para grado 3 y almacenar los resultados
 mse_poly_3_SGD, r2_poly_3_SGD = RegresionSGD_grado_3(x_train, y_train, x_test, y_test)
+
+# Imprimir los resultados de MSE y R² fuera de la función
+print("Regresión Polinómica con SGD de grado 3\n", mse_poly_3_SGD, "    ", r2_poly_3_SGD)
