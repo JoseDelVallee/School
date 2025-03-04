@@ -222,3 +222,7 @@ df
 # Asignamos las columnas
 X = df.iloc[:, :-1].values
 Y = df.iloc[:,-1].values
+
+
+# Dividimos los datos en conjuntos de entrenamiento y prueba
+x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, shuffle=True, random_state=0)
