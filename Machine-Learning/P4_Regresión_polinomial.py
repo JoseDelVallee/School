@@ -218,3 +218,7 @@ import operator
 
 df = pd.read_csv('/content/drive/MyDrive/Prácticas Machine Learning/Práctica 4_Regresión_polinomial_Machine_Learning/cal_housing.csv')
 df
+
+# Asignamos las columnas
+X = df.iloc[:, :-1].values
+Y = df.iloc[:,-1].values
