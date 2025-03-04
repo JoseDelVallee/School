@@ -200,3 +200,15 @@ print("Regresion polinomial grado 3 con OLS       ", mse_poly_3_OLS, "         "
 print("Regresion lineal con SGD                   ", mse_linear_regression_SGD, "         ", r2_linear_regression_SGD)
 print("Regresion polinomial grado 2 con SGD       ", mse_poly_2_SGD, "        ", r2_poly_2_SGD)
 print("Regresion polinomial grado 3 con SGD       ", mse_poly_3_SGD, "          ", r2_poly_3_SGD)
+
+
+#Programa 2
+#Importar bibliotecas
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn import preprocessing
+from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.model_selection import train_test_split
+import operator
+
