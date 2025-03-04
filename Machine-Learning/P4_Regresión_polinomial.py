@@ -188,3 +188,6 @@ mse_poly_3_SGD, r2_poly_3_SGD = RegresionSGD_grado_3(x_train, y_train, x_test, y
 
 # Imprimir los resultados de MSE y R² fuera de la función
 print("Regresión Polinómica con SGD de grado 3\n", mse_poly_3_SGD, "    ", r2_poly_3_SGD)
+
+# Imprimir los resultados de MSE y R² fuera de la función
+print("Regresión Polinómica con SGD de grado 3\n", mse_poly_3_SGD, "    ", r2_poly_3_SGD)
