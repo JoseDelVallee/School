@@ -191,3 +191,12 @@ print("Regresión Polinómica con SGD de grado 3\n", mse_poly_3_SGD, "    ", r2_
 
 # Imprimir los resultados de MSE y R² fuera de la función
 print("Regresión Polinómica con SGD de grado 3\n", mse_poly_3_SGD, "    ", r2_poly_3_SGD)
+
+print("Resumen de los resultados\n")
+print("Regresiones                                             mse                   r2\n")
+print("Regresion lineal con OLS                   ", mse_linear_regression_OLS, "         ", r2_linear_regression_OLS)
+print("Regresion polinomial grado 2 con OLS       ", mse_poly_2_OLS, "        ", r2_poly_2_OLS)
+print("Regresion polinomial grado 3 con OLS       ", mse_poly_3_OLS, "         ", r2_poly_3_OLS)
+print("Regresion lineal con SGD                   ", mse_linear_regression_SGD, "         ", r2_linear_regression_SGD)
+print("Regresion polinomial grado 2 con SGD       ", mse_poly_2_SGD, "        ", r2_poly_2_SGD)
+print("Regresion polinomial grado 3 con SGD       ", mse_poly_3_SGD, "          ", r2_poly_3_SGD)
