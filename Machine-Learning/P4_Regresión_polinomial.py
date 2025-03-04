@@ -212,3 +212,9 @@ from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 import operator
 
+
+
+# Dataset y su visualización
+
+df = pd.read_csv('/content/drive/MyDrive/Prácticas Machine Learning/Práctica 4_Regresión_polinomial_Machine_Learning/cal_housing.csv')
+df
