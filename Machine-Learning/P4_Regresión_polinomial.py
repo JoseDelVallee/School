@@ -233,3 +233,7 @@ linear_model = LinearRegression()
 
 # Ajustar el modelo a (x_train, y_train)
 linear_model.fit(x_train, y_train)
+
+
+#Prediccion con el modelo ajustado utilizando (x_test)
+y_pred_linear_model = linear_model.predict(x_test)
