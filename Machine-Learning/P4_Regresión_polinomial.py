@@ -229,3 +229,7 @@ x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, shuffle
 
 # Crear modelo de regresión lineal
 linear_model = LinearRegression()
+
+
+# Ajustar el modelo a (x_train, y_train)
+linear_model.fit(x_train, y_train)
