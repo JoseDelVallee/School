@@ -237,3 +237,7 @@ linear_model.fit(x_train, y_train)
 
 #Prediccion con el modelo ajustado utilizando (x_test)
 y_pred_linear_model = linear_model.predict(x_test)
+
+
+# Calcular el Error Cuadrático Medio (MSE)
+mse_linear_regression = mean_squared_error(y_test, y_pred_linear_model)
