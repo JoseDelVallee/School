@@ -251,3 +251,6 @@ poly_features_2 = preprocessing.PolynomialFeatures(degree=2)
 # Transformar los datos de entrenamiento y prueba
 x_poly_train_2 = poly_features_2.fit_transform(x_train)
 x_poly_test_2 = poly_features_2.transform(x_test)
+
+# Crear una instancia de regresión lineal
+model_2 = LinearRegression()
