@@ -245,3 +245,5 @@ mse_linear_regression = mean_squared_error(y_test, y_pred_linear_model)
 # Calcular el coeficiente de determinación R²
 r2_linear_regression = r2_score(y_test, y_pred_linear_model)
 
+# Crear modelo polinomial con grado 2
+poly_features_2 = preprocessing.PolynomialFeatures(degree=2)
