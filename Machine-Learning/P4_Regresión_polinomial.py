@@ -247,3 +247,7 @@ r2_linear_regression = r2_score(y_test, y_pred_linear_model)
 
 # Crear modelo polinomial con grado 2
 poly_features_2 = preprocessing.PolynomialFeatures(degree=2)
+
+# Transformar los datos de entrenamiento y prueba
+x_poly_train_2 = poly_features_2.fit_transform(x_train)
+x_poly_test_2 = poly_features_2.transform(x_test)
