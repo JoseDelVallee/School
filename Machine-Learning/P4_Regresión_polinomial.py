@@ -258,3 +258,6 @@ model_2 = LinearRegression()
 
 # Ajustar el modelo de regresión lineal a los datos de entrenamiento
 model_2_std.fit(x_train_poly_2_std, y_train)
+
+#Prediccion con el modelo ajustado utilizando datos de prueba estandarizados
+y_pred_2_std = model_2_std.predict(x_test_poly_2_std)
