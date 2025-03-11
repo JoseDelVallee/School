@@ -264,3 +264,6 @@ y_pred_2_std = model_2_std.predict(x_test_poly_2_std)
 
 # Calcular el Error Cuadrático Medio (MSE)
 mse_poly_2_std = mean_squared_error(y_test, y_pred_2_std)
+
+# Calcular el coeficiente de determinación R²
+r2_poly_2_std = r2_score(y_test, y_pred_2_std)
