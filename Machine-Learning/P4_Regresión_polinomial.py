@@ -261,3 +261,6 @@ model_2_std.fit(x_train_poly_2_std, y_train)
 
 #Prediccion con el modelo ajustado utilizando datos de prueba estandarizados
 y_pred_2_std = model_2_std.predict(x_test_poly_2_std)
+
+# Calcular el Error Cuadrático Medio (MSE)
+mse_poly_2_std = mean_squared_error(y_test, y_pred_2_std)
