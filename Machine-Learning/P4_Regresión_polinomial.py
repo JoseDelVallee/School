@@ -254,3 +254,7 @@ x_poly_test_2 = poly_features_2.transform(x_test)
 
 # Crear una instancia de regresión lineal
 model_2 = LinearRegression()
+
+
+# Ajustar el modelo de regresión lineal a los datos de entrenamiento
+model_2_std.fit(x_train_poly_2_std, y_train)
