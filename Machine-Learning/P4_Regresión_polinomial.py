@@ -271,3 +271,14 @@ r2_poly_3_rbt = r2_score(y_test, y_pred_3_rbt)
 
 # Calcular el coeficiente de determinación R²
 r2_poly_2_std = r2_score(y_test, y_pred_2_std)
+
+#Tabla de resultados
+print("Resumen de los resultados\n")
+print("Regresiones OLS                                                                     mse                   r2\n")
+print("Regresion lineal                                                            ", mse_linear_regression,"         ", r2_linear_regression)
+print("Regresion polinomial grado 2                                                ", mse_poly_2,"         ", r2_poly_2)
+print("Regresion polinomial grado 2 con escalamiento estandar                      ", mse_poly_2_std,"        ", r2_poly_2_std)
+print("Regresion polinomial grado 2 con escalamiento robusto                       ", mse_poly_2_rbt,"         ", r2_poly_2_rbt)
+print("Regresion polinomial grado 3                                                ", mse_poly_3,"        ", r2_poly_3)
+print("Regresion polinomial grado 3 con escalamiento estandar                      ", mse_poly_3_std,"        ", r2_poly_3_std)
+print("Regresion polinomial grado 3 con escalamiento robusto                       ", mse_poly_3_rbt,"         ", r2_poly_3_rbt)
