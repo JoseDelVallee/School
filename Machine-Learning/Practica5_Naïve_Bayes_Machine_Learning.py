@@ -10,3 +10,4 @@ import matplotlib.pyplot as plt
 # Dataset y su visualización
 
 dfIris = pd.read_csv("/content/drive/MyDrive/Prácticas Machine Learning/Práctica5_Naïve Bayes_Machine_Learning/iris.csv")
+dfIris
