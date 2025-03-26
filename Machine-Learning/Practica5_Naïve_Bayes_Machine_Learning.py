@@ -16,3 +16,6 @@ x, y = dfIris.drop("species", axis=1).values, dfIris["species"].values
 
 # Dividir el conjunto de datos en entrenamiento (70%) y prueba (30%)
 x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3,random_state=0)
+
+kf = KFold(n_splits=5)
+# Funcion para validación cruzada
