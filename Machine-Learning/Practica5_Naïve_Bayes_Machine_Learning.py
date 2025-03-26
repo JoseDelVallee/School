@@ -11,3 +11,5 @@ import matplotlib.pyplot as plt
 
 dfIris = pd.read_csv("/content/drive/MyDrive/Prácticas Machine Learning/Práctica5_Naïve Bayes_Machine_Learning/iris.csv")
 dfIris
+
+x, y = dfIris.drop("species", axis=1).values, dfIris["species"].values
