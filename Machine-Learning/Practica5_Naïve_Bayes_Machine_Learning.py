@@ -19,3 +19,6 @@ x_train, x_test, y_train, y_test = train_test_split(x,y,test_size=0.3,random_sta
 
 kf = KFold(n_splits=5)
 # Funcion para validación cruzada
+
+def validacionCruzada(model, x_train, y_train, kf):
+    accuracies = []
