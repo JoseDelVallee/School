@@ -30,3 +30,7 @@ def validacionCruzada(model, x_train, y_train, kf):
         model.fit(X_train_fold, y_train_fold)
         score = model.score(X_test_fold, y_test_fold)
         accuracies.append(score)
+
+    return np.array(accuracies)
+gnb_iris = GaussianNB()
+mnb_iris = MultinomialNB()
