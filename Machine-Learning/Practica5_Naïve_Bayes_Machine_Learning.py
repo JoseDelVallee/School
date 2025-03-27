@@ -22,3 +22,7 @@ kf = KFold(n_splits=5)
 
 def validacionCruzada(model, x_train, y_train, kf):
     accuracies = []
+
+    for train_index, test_index in kf.split(x_train):
+        X_train_fold, X_test_fold = x_train[train_index], x_train[test_index]
+        y_train_fold, y_test_fold = y_train[train_index], y_train[test_index]
