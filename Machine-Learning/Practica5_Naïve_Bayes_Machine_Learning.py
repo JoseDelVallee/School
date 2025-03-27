@@ -26,3 +26,7 @@ def validacionCruzada(model, x_train, y_train, kf):
     for train_index, test_index in kf.split(x_train):
         X_train_fold, X_test_fold = x_train[train_index], x_train[test_index]
         y_train_fold, y_test_fold = y_train[train_index], y_train[test_index]
+
+        model.fit(X_train_fold, y_train_fold)
+        score = model.score(X_test_fold, y_test_fold)
+        accuracies.append(score)
