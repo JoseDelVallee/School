@@ -40,3 +40,5 @@ mnb_iris_accuracies = validacionCruzada(mnb_iris, x_train, y_train, kf)
 def imprimir(nombre, accuracies):
     print(nombre)
     for i, acc in enumerate(accuracies):
+        print(f"pliegue {i+1}: {acc}")
+    print("Promedio: ", accuracies.mean())
