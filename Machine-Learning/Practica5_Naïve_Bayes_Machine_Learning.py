@@ -42,3 +42,6 @@ def imprimir(nombre, accuracies):
     for i, acc in enumerate(accuracies):
         print(f"pliegue {i+1}: {acc}")
     print("Promedio: ", accuracies.mean())
+
+imprimir("Gauss", gnb_iris_accuracies)
+imprimir("Multinomial", mnb_iris_accuracies)
