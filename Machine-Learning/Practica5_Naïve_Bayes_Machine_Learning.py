@@ -36,3 +36,7 @@ gnb_iris = GaussianNB()
 mnb_iris = MultinomialNB()
 gnb_iris_accuracies = validacionCruzada(gnb_iris, x_train, y_train, kf)
 mnb_iris_accuracies = validacionCruzada(mnb_iris, x_train, y_train, kf)
+
+def imprimir(nombre, accuracies):
+    print(nombre)
+    for i, acc in enumerate(accuracies):
