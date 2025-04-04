@@ -45,3 +45,6 @@ def imprimir(nombre, accuracies):
 
 imprimir("Gauss", gnb_iris_accuracies)
 imprimir("Multinomial", mnb_iris_accuracies)
+
+if gnb_iris_accuracies.mean() > mnb_iris_accuracies.mean():
+    modelo_chido, nombre = gnb_iris, "GaussianNB_iris"
