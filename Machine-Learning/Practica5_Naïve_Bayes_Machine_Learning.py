@@ -48,3 +48,5 @@ imprimir("Multinomial", mnb_iris_accuracies)
 
 if gnb_iris_accuracies.mean() > mnb_iris_accuracies.mean():
     modelo_chido, nombre = gnb_iris, "GaussianNB_iris"
+else:
+    modelo_chido, nombre = mnb_iris, "MultinomialNB_iris"
