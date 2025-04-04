@@ -55,3 +55,7 @@ modelo_chido.fit(x_train, y_train)
 prediccion = modelo_chido.predict(x_test)
 print(f"reporte de clasificacion de {nombre}")
 print(classification_report(y_test, prediccion))
+
+# Matriz de confusión
+
+matriz_de_conf = confusion_matrix(y_test, prediccion)
