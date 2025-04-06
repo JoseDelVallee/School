@@ -62,3 +62,8 @@ matriz_de_conf = confusion_matrix(y_test, prediccion)
 matriz = ConfusionMatrixDisplay(confusion_matrix=matriz_de_conf,display_labels=modelo_chido.classes_)
 matriz.plot()
 plt.show()
+##Programa 2
+# Dataset y su visualización
+
+dfEmails = pd.read_csv("/content/drive/MyDrive/Prácticas Machine Learning/Práctica5_Naïve Bayes_Machine_Learning/emails.csv").iloc[:, 1:]
+dfEmails
