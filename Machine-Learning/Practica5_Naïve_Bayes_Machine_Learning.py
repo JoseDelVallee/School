@@ -67,3 +67,8 @@ plt.show()
 
 dfEmails = pd.read_csv("/content/drive/MyDrive/Prácticas Machine Learning/Práctica5_Naïve Bayes_Machine_Learning/emails.csv").iloc[:, 1:]
 dfEmails
+
+# Dividir el conjunto de datos en entrenamiento (70%) y prueba (30%)
+
+x_train2, x_test2, y_train2, y_test2 = train_test_split(x,y,test_size=0.3,random_state=0)
+kf2 = KFold(n_splits=5)
