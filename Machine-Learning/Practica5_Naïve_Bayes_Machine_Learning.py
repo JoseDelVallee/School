@@ -72,3 +72,8 @@ dfEmails
 
 x_train2, x_test2, y_train2, y_test2 = train_test_split(x,y,test_size=0.3,random_state=0)
 kf2 = KFold(n_splits=5)
+
+gnb_emails = GaussianNB()
+mnb_emails = MultinomialNB()
+gnb_emails_accuracies = validacionCruzada(gnb_emails,x_train2, y_train2, kf2)
+mnb_emails_accuracies = validacionCruzada(mnb_emails, x_train2, y_train2, kf2)
