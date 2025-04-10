@@ -87,3 +87,5 @@ else:
     modelo_chido, nombre = mnb_iris, "MultinomialNB_iris"
 modelo_chido.fit(x_train, y_train)
 prediccion = modelo_chido.predict(x_test)
+print(f"reporte de clasificacion de {nombre}")
+print(classification_report(y_test, prediccion))
