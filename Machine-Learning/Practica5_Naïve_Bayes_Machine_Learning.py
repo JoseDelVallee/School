@@ -93,3 +93,4 @@ print(classification_report(y_test, prediccion))
 # Matriz de confusión
 matriz_de_conf = confusion_matrix(y_test, prediccion)
 matriz = ConfusionMatrixDisplay(confusion_matrix=matriz_de_conf,display_labels=modelo_chido.classes_)
+matriz.plot()
