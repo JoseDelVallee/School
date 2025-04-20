@@ -97,3 +97,5 @@ matriz.plot()
 plt.show()
 
 # Dataset y su visualización
+dfEmails = pd.read_csv("/content/drive/MyDrive/Prácticas Machine Learning/Práctica5_Naïve Bayes_Machine_Learning/emails.csv").iloc[:, 1:]
+dfEmails
