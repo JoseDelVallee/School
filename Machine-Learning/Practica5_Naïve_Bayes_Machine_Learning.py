@@ -101,3 +101,5 @@ dfEmails = pd.read_csv("/content/drive/MyDrive/PraÌcticas Machine Learning/PraÌ
 dfEmails
 x,y = dfEmails.drop("Prediction", axis=1).values, dfEmails["Prediction"].values
 x,y
+
+# Dividir el conjunto de datos en entrenamiento (70%) y prueba (30%)
