@@ -112,3 +112,5 @@ gnb_emails_accuracies = validacionCruzada(gnb_emails,x_train2, y_train2, kf2)
 mnb_emails_accuracies = validacionCruzada(mnb_emails, x_train2, y_train2, kf2)
 imprimir("Gauss", gnb_emails_accuracies)
 imprimir("Multinomial", mnb_emails_accuracies)
+if gnb_emails_accuracies.mean() > mnb_emails_accuracies.mean():
+    modelo_chido2, nombre2 = gnb_emails, "GaussianNB_emails"
