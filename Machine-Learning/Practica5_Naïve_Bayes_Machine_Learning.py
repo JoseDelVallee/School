@@ -116,3 +116,5 @@ if gnb_emails_accuracies.mean() > mnb_emails_accuracies.mean():
     modelo_chido2, nombre2 = gnb_emails, "GaussianNB_emails"
 else:
     modelo_chido2, nombre2 = mnb_emails, "MultinomialNB_emails"
+modelo_chido2.fit(x_train2, y_train2)
+prediccion2 = modelo_chido2.predict(x_test2)
