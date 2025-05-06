@@ -118,3 +118,5 @@ else:
     modelo_chido2, nombre2 = mnb_emails, "MultinomialNB_emails"
 modelo_chido2.fit(x_train2, y_train2)
 prediccion2 = modelo_chido2.predict(x_test2)
+print(f"reporte de clasificacion de {nombre2}:")
+print(classification_report(y_test2, prediccion2))
